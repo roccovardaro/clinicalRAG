@@ -146,12 +146,12 @@ Il progetto è diviso in due macro fasi. Di seguito viene illustrata l'architett
 ### Fase 1 (Indicizzazione)
 I documenti clinici (testi e/o immagini) vengono caricati, puliti e suddivisi in chunk più piccoli (`chunking.py`). Successivamente vengono generati gli embeddings testuali e/o visivi (utilizzando `BiomedCLIP`) e salvati all'interno del database vettoriale Qdrant (`qdrantHandler.py`).
 
-![Architettura Fase 1 - Indicizzazione](images/indexing_architecture.png)
+![Architettura Fase 1 - Indicizzazione](images_architecture/indexing_architecture.png)
 
 ### Fase 2 (Retrieval e Generazione)
 L'utente interagisce tramite l'interfaccia chat. La query dell'utente viene vettorializzata e utilizzata per recuperare i documenti più rilevanti dal Vector DB (`retrieval.py`). I risultati grezzi subiscono un reranking tramite `MedCPTCrossEncoder` (`reranking.py`) per migliorarne la pertinenza. Infine, i documenti e le immagini selezionate vengono passati al LLM locale tramite Ollama per generare una risposta precisa e contestualizzata (`prompt_llm.py`).
 
-![Architettura Fase 2 - Retrieval e Generazione](images/retrieval_architecture.png)
+![Architettura Fase 2 - Retrieval e Generazione](images_architecture/retrieval_architecture.png)
 
-![Architettura GUI](images/gui_architecture.png)
+![Architettura GUI](images_architecture/gui_architecture.png)
 ---
