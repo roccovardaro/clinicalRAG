@@ -155,3 +155,6 @@ L'utente interagisce tramite l'interfaccia chat. La query dell'utente viene vett
 
 ![Architettura GUI](images_architecture/gui_architecture.png)
 ---
+
+## Credits
+Questo progetto è stato sviluppato come elaborato assegnato per il corso "Information Retrieval and Natural Language Processing", semestre autunnale 2025 (Instructor: prof. [Andrea Tagarelli](https://mlnteam-unical.github.io/)) presso il Dipartimento DIMES dell'Università della Calabria, Italia.
